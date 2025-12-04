@@ -29,7 +29,7 @@ public class Main {
         }
 
         int[] popoCode = new int[popocho];
-        int max = 101;
+        int max = popocho*10+1;
         boolean check;
 
         for(int i=0; i<popocho; i++){
@@ -45,6 +45,9 @@ public class Main {
             }
             System.out.println("Popocho nº"+i+" - Codigo: "+popoCode[i]);
         }
+        
+        int eaten = RNG.nextInt(popocho);
+        System.out.println("Gargamel se ha comido a popocho con el codigo "+popoCode[eaten]);
 
     }
 }
